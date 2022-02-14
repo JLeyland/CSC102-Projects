@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--This was created by Jonathan Leyland for class CSC102-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is my title for the Program-->
+    <title>UAT Space Program</title>
+    <!--The Countdown Script-->
+    <script>
+        function startTheCountdown()
+        {
+            // Start Countdown and Assign var
+            var countdown = 10;
+            var timeout = 10000;
+            var blastoff = "Blastoff!"
+        
+             setTimeout(() => {
+            document.getElementById("countdownDisplay").innerHTML = blastoff;
+            countdown = countdown - 1;
+        }, timeout)
+        timeout =  timeout - 1000
+        
+             setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+            setTimeout(() => {
+                document.getElementById("countdownDisplay").innerHTML = countdown;
+                countdown = countdown - 1;
+            }, timeout)
+            timeout =  timeout - 1000
+        
+        }
+    </script>
+</head>
+<body>
+    <!--This allows the image for the background and the text to be in the-->
+    <link rel="stylesheet" type="text/css" href="Project1.css">
+    <script>
+        alert("You Are Now Entering the Final Frontier at the UAT Space Program.")
+    </script>
+    <img align = "topleft" src="UATspaceLogo-2.jpg" />
+    <h1>
+        UAT Space Program
+    </h1>
+    <p>
+        Click Start to Start the Countdown.
+    </p>
+    
+    <button style="font-size: 25pt; border-radius: 40%; background-color: rgb(0, 255, 0);" type="button" onclick="startTheCountdown()"  style="background-color: rgb(0, 255, 0);"><b>Start</b></button>
+    <h2>
+        Countdown
+    </h2>
+    <p style="font-size: 100pt;" id="countdownDisplay"><b>
+        10
+    </b></p>
+    
+</body>
+</html>

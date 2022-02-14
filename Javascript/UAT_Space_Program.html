@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--This was created by Jonathan Leyland for class CSC102-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is my title for the Program-->
+    <title>UAT Space Program</title>
+    <!--The Countdown Script-->
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--This allows the image for the background and the text to be in the-->
+    <link rel="stylesheet" type="text/css" href="Project1.css">
+    <script>
+        alert("You Are Now Entering the Final Frontier at the UAT Space Program.")
+    </script>
+    <img src="UATspaceLogo-2.jpg" />
+    <h1>
+        UAT Space Program
+    </h1>
+    <button class="mediaButton"; type="button" onclick="labStation()">Lab</button>
+    <button class="mediaButton"; type="button" onclick="playOddity()">Space Oddity</button>
+    <button class="mediaButton"; type="button" onclick="shipAlarm()">Alarm</button>
+    
+    <table class="tableTop">
+        <tr>
+            <!--tr defines a row in a table-->
+            <td>
+                <h1>
+                    UAT Space Program
+                </h1>
+            </td>
+        </tr>
+    </table>
+    <table id="data" border="2" width="70%" style="background-color: black;">
+        <col style="width: 35%;">
+        <col style="width: 35%;">
+        <thead>
+            <tr style="font-family: fantasy;">
+                <th>Data type</th>
+                <th>Reading</th>
+            </tr>
+        </thead>
+        <tbody style="font-weight: bolder;">
+            <tr id="seconds"><td>Time Elapsed:</td><td>15 seconds</td></tr>
+            <tr id="latitude"><td>Latitude:</td><td>0</td></tr>
+            <tr id="longitude"><td>Longitude:</td><td>0</td></tr>
+            <tr id="gps_altitude"><td>GPS Altitude:</td><td>0</td></tr>
+            <tr id="bmpSensor_altitude"><td>BMP Sensor Altitude:</td><td>30383.04</td></tr>
+            <tr id="bmpSensor_pressure"><td>BMP Sensor Pressure:</td><td>2.34</td></tr>
+            <tr id="bmpSensor_temp"><td>BMP Sensor Temp:</td><td>0</td></tr>
+            <tr id="bdigSensor_temp"><td>Digital Sensor Temp:</td><td>24.12</td></tr>
+            <tr id="cssSensor_temp"><td>CSS Sensor Temp:</td><td>25</td></tr>
+            <tr id="cssSensor_eCO2"><td>CSS Sensor eCO2:</td><td>400</td></tr>
+            <tr id="cssSensor_TVOC"><td>CSS Sensor TVOC:</td><td>0</td></tr>
+            <tr id="UV"><td>UV:</td><td>0</td></tr>
+            <tr id="accelX"><td>accelX:</td><td>-0.87</td></tr>
+            <tr id="accelY"><td>accelY:</td><td>-0.02</td></tr>
+            <tr id="accelZ"><td>accelZ:</td><td>9.61</td></tr>
+            <tr id="gyroX"><td>gyroX:</td><td>0.13</td></tr>
+            <tr id="gyroY"><td>gyroY:</td><td>0.57</td></tr>
+            <tr id="gyroZ"><td>gyroY:</td><td>-0.24</td></tr>
+            <tr id="magneticX"><td>magneticX:</td><td>4.66</td></tr>
+            <tr id="magneticY"><td>magneticY:</td><td>0.01</td></tr>
+            <tr id="magneticZ"><td>magneticZ:</td><td>-0.4</td></tr>
+        </tbody>
+    </table>
+    
+    <p>
+        Click Start to Start the Countdown.
+    </p>
+
+    
+    <h1>
+        Countdown
+    </h1>
+
+    <!--Start Button-->
+    <button id="startButton" 
+    style="font-size: 25pt; 
+    border-radius: 40%; 
+    border-color: yellow;
+    background-color: black;" 
+    class="startButton"
+    type="button" onclick="startTheCountdown(), start()"><b>Start</b></button>
+   
+    <!--Stop Button-->
+    <button id="stopButton" 
+    style="font-size: 25pt; 
+    border-radius: 40%; 
+    border-color: yellow;
+    background-color: black;" 
+    class="stopButton"
+    type="button" onclick="stop();" 
+    disabled=true><b>Stop</b></button>
+
+    <p style="font-size: 50pt;" id="countdownDisplay"><b>
+        
+    </b></p>
+    
+</body>
+</html>
